@@ -1,0 +1,307 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Création de sites internet modernes et professionnels pour les entreprises locales.">
+    <title>Enzo Bourgon | Création Web</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #0b0d12;
+            color: #ffffff;
+            line-height: 1.6;
+        }
+
+        .container {
+            width: 88%;
+            max-width: 1150px;
+            margin: auto;
+        }
+
+        header {
+            padding: 25px 0;
+            border-bottom: 1px solid #252832;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        .logo span {
+            color: #70e0b1;
+        }
+
+        nav a {
+            color: #aaa;
+            text-decoration: none;
+            margin-left: 25px;
+            font-size: 14px;
+        }
+
+        nav a:hover {
+            color: #70e0b1;
+        }
+
+        .hero {
+            padding: 125px 0;
+            max-width: 850px;
+        }
+
+        .tag {
+            color: #70e0b1;
+            font-size: 13px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        h1 {
+            font-size: clamp(42px, 7vw, 75px);
+            line-height: 1.12;
+            margin: 25px 0;
+        }
+
+        h1 span {
+            color: #70e0b1;
+        }
+
+        .hero p {
+            color: #a5a9b5;
+            font-size: 18px;
+            max-width: 600px;
+            margin-bottom: 35px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 14px 25px;
+            background: #70e0b1;
+            color: #0b0d12;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 6px;
+        }
+
+        section {
+            padding: 75px 0;
+            border-top: 1px solid #252832;
+        }
+
+        h2 {
+            font-size: 35px;
+            margin-bottom: 35px;
+        }
+
+        .services, .projects {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .card {
+            background: #151821;
+            border: 1px solid #292e3a;
+            padding: 30px;
+            border-radius: 10px;
+        }
+
+        .card h3 {
+            margin-bottom: 12px;
+        }
+
+        .card p {
+            color: #a5a9b5;
+            font-size: 14px;
+        }
+
+        .number {
+            color: #70e0b1;
+            font-size: 13px;
+            margin-bottom: 20px;
+        }
+
+        .about {
+            max-width: 700px;
+            color: #a5a9b5;
+        }
+
+        .contact {
+            text-align: center;
+        }
+
+        .contact p {
+            color: #a5a9b5;
+            margin-bottom: 25px;
+        }
+
+        footer {
+            padding: 25px 0;
+            text-align: center;
+            color: #777;
+            border-top: 1px solid #252832;
+            font-size: 13px;
+        }
+
+        @media (max-width: 700px) {
+            .services, .projects {
+                grid-template-columns: 1fr;
+            }
+
+            nav a {
+                margin-left: 10px;
+                font-size: 12px;
+            }
+
+            .hero {
+                padding: 85px 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="container">
+        <nav>
+            <div class="logo">ENZO<span>.</span></div>
+            <div>
+                <a href="#services">Services</a>
+                <a href="#projects">Projets</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </nav>
+    </div>
+</header>
+
+<main>
+
+    <div class="container">
+        <div class="hero">
+            <div class="tag">Web Development · Vosges, France</div>
+
+            <h1>
+                Votre présence en ligne,
+                <span>à un autre niveau.</span>
+            </h1>
+
+            <p>
+                Je conçois des sites internet modernes,
+                élégants et performants pour accompagner
+                les entreprises dans leur développement numérique.
+            </p>
+
+            <a href="#projects" class="btn">Découvrir mes projets ↗</a>
+        </div>
+    </div>
+
+    <section id="services">
+        <div class="container">
+            <h2>Mes services.</h2>
+
+            <div class="services">
+                <div class="card">
+                    <div class="number">01 / WEBSITE</div>
+                    <h3>Sites vitrines</h3>
+                    <p>
+                        Des sites professionnels pour présenter
+                        votre activité et attirer de nouveaux clients.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <div class="number">02 / DESIGN</div>
+                    <h3>Web Design</h3>
+                    <p>
+                        Des interfaces modernes et intuitives
+                        adaptées à votre image de marque.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <div class="number">03 / DIGITAL</div>
+                    <h3>Solutions digitales</h3>
+                    <p>
+                        Des fonctionnalités personnalisées
+                        pour répondre à vos besoins.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <h2>Mes réalisations.</h2>
+
+            <div class="projects">
+                <div class="card">
+                    <div class="number">PROJECT 01</div>
+                    <h3>Restaurant Concept</h3>
+                    <p>Projet de démonstration : site vitrine pour un restaurant.</p>
+                </div>
+
+                <div class="card">
+                    <div class="number">PROJECT 02</div>
+                    <h3>Artisan Concept</h3>
+                    <p>Projet de démonstration : site professionnel pour un artisan.</p>
+                </div>
+
+                <div class="card">
+                    <div class="number">PROJECT 03</div>
+                    <h3>Business Concept</h3>
+                    <p>Projet de démonstration : présentation d'une entreprise locale.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <h2>À propos.</h2>
+            <div class="about">
+                Passionné par le digital, le marketing et les nouvelles
+                technologies, je développe des solutions web destinées
+                à accompagner les entreprises dans leur transformation numérique.
+
+                Mon objectif : rendre le web professionnel accessible
+                aux entreprises locales.
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container contact">
+            <h2>Un projet en tête ?</h2>
+            <p>Parlons ensemble de votre présence sur internet.</p>
+            <a href="mailto:" class="btn">Me contacter ↗</a>
+        </div>
+    </section>
+
+</main>
+
+<footer>
+    © 2026 Enzo Bourgon — Portfolio Web Development
+</footer>
+
+</body>
+</html>

@@ -13,6 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
     nav.querySelectorAll("a").forEach(link => link.addEventListener("click", () => {
       nav.classList.remove("open");
       menuButton.setAttribute("aria-expanded", "false");
+      menuButton.setAttribute("aria-label", "Open navigation");
     }));
   }
 
